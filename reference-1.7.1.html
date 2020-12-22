@@ -4105,7 +4105,7 @@ var map = L.map('map', {
 <p>下列形式的字符串:</p>
 <pre><code>'http://{s}.somedomain.com/blabla/{z}/{x}/{y}{r}.png'
 </code></pre>
-<p>{ s }是指一个可用的子域(按顺序用于帮助处理每个域限制的浏览器并行请求; 子域值在选项中指定; a、 b 或 c 默认可以省略)、{ z }ー缩放级别、{ x }和{ y }ー瓦片坐标。可以使用{ r }在 URL 中添加“ &amp; commat; 2x”来加载视网膜瓷砖。</p>
+<p>{ s }是指一个可用的子域(按顺序用于帮助处理每个域限制的浏览器并行请求; 子域值在选项中指定; a、 b 或 c 默认可以省略)、{ z }ー缩放级别、{ x }和{ y }ー瓦片坐标。可以使用{ r }在 URL 中添加“ &amp; commat; 2x”来加载视网膜瓦片。</p>
 <p>你可以在模板中使用自定义键，它将通过 TileLayer 选项进行评估，如下所示:</p>
 <pre><code>L.tileLayer('http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {foo: 'bar'});
 </code></pre>
@@ -4200,7 +4200,7 @@ var map = L.map('map', {
 		<td><code><b>detectRetina</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>如果为真，用户是在一个视网膜显示，它会要求四个瓷砖的一半规定的大小和更大的变焦水平，以利用一个高分辨率。</td>
+		<td>如果为真，用户是在一个视网膜显示，它会要求四个瓦片的一半规定的大小和更大的变焦水平，以利用一个高分辨率。</td>
 	</tr>
 	<tr id='tilelayer-crossorigin'>
 		<td><code><b>crossOrigin</b></code></td>
@@ -4245,7 +4245,7 @@ var map = L.map('map', {
 		<td><code><b>updateWhenIdle</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>(depends)</code></td>
-		<td>只有在平移结束时才加载新的瓷砖。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
+		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
 	</tr>
 	<tr id='tilelayer-updatewhenzooming'>
 		<td><code><b>updateWhenZooming</b></code></td>
@@ -4263,13 +4263,13 @@ var map = L.map('map', {
 		<td><code><b>zIndex</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1</code></td>
-		<td>瓷砖层的显式 zIndex。</td>
+		<td>瓦片层的显式 zIndex。</td>
 	</tr>
 	<tr id='tilelayer-bounds'>
 		<td><code><b>bounds</b></code></td>
 		<td><code><a href='#latlngbounds'>LatLngBounds</a></code></td>
 		<td><code>undefined</code></td>
-		<td>如果设置，瓷砖将只装载在设置 LatLngBounds。</td>
+		<td>如果设置，瓦片将只装载在设置 LatLngBounds。</td>
 	</tr>
 	<tr id='tilelayer-maxnativezoom'>
 		<td><code><b>maxNativeZoom</b></code></td>
@@ -4287,7 +4287,7 @@ var map = L.map('map', {
 		<td><code><b>noWrap</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>该层是否包裹在抗霉菌层周围。如果为真，GridLayer 将只在低缩放级别显示一次。当地图 CRS 没有环绕时没有效果。可以与边界结合使用，以防止请求超出 CRS 限制的瓷砖。</td>
+		<td>该层是否包裹在抗霉菌层周围。如果为真，GridLayer 将只在低缩放级别显示一次。当地图 CRS 没有环绕时没有效果。可以与边界结合使用，以防止请求超出 CRS 限制的瓦片。</td>
 	</tr>
 	<tr id='tilelayer-pane'>
 		<td><code><b>pane</b></code></td>
@@ -4365,7 +4365,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-loading'>
 		<td><code><b>loading</b></code></td>
 		<td><code><a href='#event'>Event</a></code></td>
-		<td>当网格层开始加载瓷砖时触发。</td>
+		<td>当网格层开始加载瓦片时触发。</td>
 	</tr>
 	<tr id='tilelayer-tileunload'>
 		<td><code><b>tileunload</b></code></td>
@@ -4385,7 +4385,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-tileload'>
 		<td><code><b>tileload</b></code></td>
 		<td><code><a href='#tileevent'>TileEvent</a></code></td>
-		<td>当一个瓷砖加载时开火。</td>
+		<td>当一个瓦片加载时开火。</td>
 	</tr>
 	<tr id='tilelayer-load'>
 		<td><code><b>load</b></code></td>
@@ -4562,13 +4562,13 @@ var map = L.map('map', {
 	<tr id='tilelayer-bringtofront'>
 		<td><code><b>bringToFront</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>将瓷砖图层带到所有瓷砖图层的顶部。</p>
+		<td><p>将瓦片图层带到所有瓦片图层的顶部。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-bringtoback'>
 		<td><code><b>bringToBack</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>将瓷砖层带到所有瓷砖层的底部。</p>
+		<td><p>将瓦片层带到所有瓦片层的底部。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-getcontainer'>
@@ -5098,7 +5098,7 @@ var map = L.map('map', {
 		<td><code><b>detectRetina</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>如果为真，用户是在一个视网膜显示，它会要求四个瓷砖的一半规定的大小和更大的变焦水平，以利用一个高分辨率。</td>
+		<td>如果为真，用户是在一个视网膜显示，它会要求四个瓦片的一半规定的大小和更大的变焦水平，以利用一个高分辨率。</td>
 	</tr>
 	<tr id='tilelayer-wms-crossorigin'>
 		<td><code><b>crossOrigin</b></code></td>
@@ -5144,7 +5144,7 @@ var map = L.map('map', {
 		<td><code><b>updateWhenIdle</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>(depends)</code></td>
-		<td>只有在平移结束时才加载新的瓷砖。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
+		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
 	</tr>
 	<tr id='tilelayer-wms-updatewhenzooming'>
 		<td><code><b>updateWhenZooming</b></code></td>
@@ -5162,13 +5162,13 @@ var map = L.map('map', {
 		<td><code><b>zIndex</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1</code></td>
-		<td>瓷砖层的显式 zIndex。</td>
+		<td>瓦片层的显式 zIndex。</td>
 	</tr>
 	<tr id='tilelayer-wms-bounds'>
 		<td><code><b>bounds</b></code></td>
 		<td><code><a href='#latlngbounds'>LatLngBounds</a></code></td>
 		<td><code>undefined</code></td>
-		<td>如果设置，瓷砖将只装载在设置 LatLngBounds。</td>
+		<td>如果设置，瓦片将只装载在设置 LatLngBounds。</td>
 	</tr>
 	<tr id='tilelayer-wms-maxnativezoom'>
 		<td><code><b>maxNativeZoom</b></code></td>
@@ -5186,7 +5186,7 @@ var map = L.map('map', {
 		<td><code><b>noWrap</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>该层是否包裹在抗霉菌层周围。如果为真，GridLayer 将只在低缩放级别显示一次。当地图 CRS 没有环绕时没有效果。可以与边界结合使用，以防止请求超出 CRS 限制的瓷砖。</td>
+		<td>该层是否包裹在抗霉菌层周围。如果为真，GridLayer 将只在低缩放级别显示一次。当地图 CRS 没有环绕时没有效果。可以与边界结合使用，以防止请求超出 CRS 限制的瓦片。</td>
 	</tr>
 	<tr id='tilelayer-wms-pane'>
 		<td><code><b>pane</b></code></td>
@@ -5264,7 +5264,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-loading'>
 		<td><code><b>loading</b></code></td>
 		<td><code><a href='#event'>Event</a></code></td>
-		<td>当网格层开始加载瓷砖时触发。</td>
+		<td>当网格层开始加载瓦片时触发。</td>
 	</tr>
 	<tr id='tilelayer-wms-tileunload'>
 		<td><code><b>tileunload</b></code></td>
@@ -5284,7 +5284,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-tileload'>
 		<td><code><b>tileload</b></code></td>
 		<td><code><a href='#tileevent'>TileEvent</a></code></td>
-		<td>当一个瓷砖加载时开火。</td>
+		<td>当一个瓦片加载时开火。</td>
 	</tr>
 	<tr id='tilelayer-wms-load'>
 		<td><code><b>load</b></code></td>
@@ -5467,13 +5467,13 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-bringtofront'>
 		<td><code><b>bringToFront</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>将瓷砖图层带到所有瓷砖图层的顶部。</p>
+		<td><p>将瓦片图层带到所有瓦片图层的顶部。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-wms-bringtoback'>
 		<td><code><b>bringToBack</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>将瓷砖层带到所有瓷砖层的底部。</p>
+		<td><p>将瓦片层带到所有瓦片层的底部。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-wms-getcontainer'>
@@ -16505,7 +16505,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 		<td><code><b>updateWhenIdle</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>(depends)</code></td>
-		<td>只有在平移结束时才加载新的瓷砖。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
+		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
 	</tr>
 	<tr id='gridlayer-updatewhenzooming'>
 		<td><code><b>updateWhenZooming</b></code></td>
@@ -16523,13 +16523,13 @@ var circle = L.circle( center, { renderer: myRenderer } );
 		<td><code><b>zIndex</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1</code></td>
-		<td>瓷砖层的显式 zIndex。</td>
+		<td>瓦片层的显式 zIndex。</td>
 	</tr>
 	<tr id='gridlayer-bounds'>
 		<td><code><b>bounds</b></code></td>
 		<td><code><a href='#latlngbounds'>LatLngBounds</a></code></td>
 		<td><code>undefined</code></td>
-		<td>如果设置，瓷砖将只装载在设置 LatLngBounds。</td>
+		<td>如果设置，瓦片将只装载在设置 LatLngBounds。</td>
 	</tr>
 	<tr id='gridlayer-minzoom'>
 		<td><code><b>minZoom</b></code></td>
@@ -16559,7 +16559,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 		<td><code><b>noWrap</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>该层是否包裹在抗霉菌层周围。如果为真，GridLayer 将只在低缩放级别显示一次。当地图 CRS 没有环绕时没有效果。可以与边界结合使用，以防止请求超出 CRS 限制的瓷砖。</td>
+		<td>该层是否包裹在抗霉菌层周围。如果为真，GridLayer 将只在低缩放级别显示一次。当地图 CRS 没有环绕时没有效果。可以与边界结合使用，以防止请求超出 CRS 限制的瓦片。</td>
 	</tr>
 	<tr id='gridlayer-pane'>
 		<td><code><b>pane</b></code></td>
@@ -16630,7 +16630,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='gridlayer-loading'>
 		<td><code><b>loading</b></code></td>
 		<td><code><a href='#event'>Event</a></code></td>
-		<td>当网格层开始加载瓷砖时触发。</td>
+		<td>当网格层开始加载瓦片时触发。</td>
 	</tr>
 	<tr id='gridlayer-tileunload'>
 		<td><code><b>tileunload</b></code></td>
@@ -16650,7 +16650,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='gridlayer-tileload'>
 		<td><code><b>tileload</b></code></td>
 		<td><code><a href='#tileevent'>TileEvent</a></code></td>
-		<td>当一个瓷砖加载时开火。</td>
+		<td>当一个瓦片加载时开火。</td>
 	</tr>
 	<tr id='gridlayer-load'>
 		<td><code><b>load</b></code></td>
@@ -16773,13 +16773,13 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='gridlayer-bringtofront'>
 		<td><code><b>bringToFront</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>将瓷砖图层带到所有瓷砖图层的顶部。</p>
+		<td><p>将瓦片图层带到所有瓦片图层的顶部。</p>
 </td>
 	</tr>
 	<tr id='gridlayer-bringtoback'>
 		<td><code><b>bringToBack</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>将瓷砖层带到所有瓷砖层的底部。</p>
+		<td><p>将瓦片层带到所有瓦片层的底部。</p>
 </td>
 	</tr>
 	<tr id='gridlayer-getcontainer'>
@@ -20254,7 +20254,7 @@ L.control.layers(baseLayers, overlays).addTo(map);
 	</div>
 </div>
 
-</section><h2 id='class'>Class</h2><p>类为宣传册的 OOP 设施提供动力，并用于创建几乎所有宣传册类。</p>
+</section><h2 id='class'>Class</h2><p>类为Leaflet的 OOP 设施提供动力，并用于创建几乎所有Leaflet类。</p>
 <p>除了实现一个简单的经典继承模型外，还引入了一些特殊的性质，以方便代码组织ー选项，包括和静态。</p>
 
 <section>
@@ -22076,7 +22076,7 @@ layer.closeTooltip();
 	</tr>
 	<tr id='crs-l-crs-epsg3395'>
 		<td><code><b>L.CRS.EPSG3395</b></code></td>
-		<td>一些商业瓷砖供应商很少使用，使用椭圆形麦卡托投影法。</td>
+		<td>一些商业瓦片供应商很少使用，使用椭圆形麦卡托投影法。</td>
 	</tr>
 	<tr id='crs-l-crs-epsg3857'>
 		<td><code><b>L.CRS.EPSG3857</b></code></td>
@@ -22085,7 +22085,7 @@ layer.closeTooltip();
 	<tr id='crs-l-crs-epsg4326'>
 		<td><code><b>L.CRS.EPSG4326</b></code></td>
 		<td>地理信息系统爱好者常用的 CRS。使用简单的等长方形投影。
-<p>单张1.0. x 符合 EPSG 的 TMS 坐标系统: 4326，这是从0.7. x 行为的突破性变化。如果您正在使用带有此 CRS 的 TileLayer，请确保有两个256x256像素的瓷砖在缩放级别为零时覆盖整个地球，并确保瓷砖坐标原点为(- 180，+ 90) ，或者对于设置了 tms 选项的 TileLayers 为(- 180,-90)。</p></td>
+<p>单张1.0. x 符合 EPSG 的 TMS 坐标系统: 4326，这是从0.7. x 行为的突破性变化。如果您正在使用带有此 CRS 的 TileLayer，请确保有两个256x256像素的瓦片在缩放级别为零时覆盖整个地球，并确保瓦片坐标原点为(- 180，+ 90) ，或者对于设置了 tms 选项的 TileLayers 为(- 180,-90)。</p></td>
 	</tr>
 	<tr id='crs-l-crs-base'>
 		<td><code><b>L.CRS.Base</b></code></td>
