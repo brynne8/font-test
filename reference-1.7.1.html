@@ -141,7 +141,7 @@
 		</div>
 	</div>
 
-	<h2 id='map'>Map</h2><p>API 的中心类ーー它用于在页面上创建一个映射并对其进行操作。</p>
+	<h2 id='map'>Map</h2><p>API 的中心类ーー它用于在页面上创建一个地图并对其进行操作。</p>
 
 <section>
 <h3 id='map-example'>Usage example</h3>
@@ -232,13 +232,13 @@ var map = L.map('map', {
 		<td><code><b>attributionControl</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>属性控件是否默认添加到映射中。</td>
+		<td>属性控件是否默认添加到地图中。</td>
 	</tr>
 	<tr id='map-zoomcontrol'>
 		<td><code><b>zoomControl</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>是否默认将缩放控件添加到映射中。</td>
+		<td>是否默认将缩放控件添加到地图中。</td>
 	</tr>
 </tbody></table>
 
@@ -289,13 +289,13 @@ var map = L.map('map', {
 		<td><code><b>zoomDelta</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1</code></td>
-		<td>控制在执行 zoomIn ()、 zoomOut ()、在键盘上按 + 或-或使用缩放控件之后，映射的缩放级别将发生多大变化。小于1的值(例如0.5)允许更大的粒度。</td>
+		<td>控制在执行 zoomIn ()、 zoomOut ()、在键盘上按 + 或-或使用缩放控件之后，地图的缩放级别将发生多大变化。小于1的值(例如0.5)允许更大的粒度。</td>
 	</tr>
 	<tr id='map-trackresize'>
 		<td><code><b>trackResize</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>映射是否自动处理浏览器窗口调整大小以更新自身。</td>
+		<td>地图是否自动处理浏览器窗口调整大小以更新自身。</td>
 	</tr>
 </tbody></table>
 
@@ -346,7 +346,7 @@ var map = L.map('map', {
 		<td><code><b>maxBoundsViscosity</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>0.0</code></td>
-		<td>如果设置了 maxBounds，则此选项将控制拖动映射时边界的固定程度。默认值0.0允许用户以正常速度拖出边界，较高的值将减慢地图拖出边界，1.0使边界完全固定，防止用户拖出边界。</td>
+		<td>如果设置了 maxBounds，则此选项将控制拖动地图时边界的固定程度。默认值0.0允许用户以正常速度拖出边界，较高的值将减慢地图拖出边界，1.0使边界完全固定，防止用户拖出边界。</td>
 	</tr>
 </tbody></table>
 
@@ -502,7 +502,7 @@ var map = L.map('map', {
 		<td><code><b>maxBounds</b></code></td>
 		<td><code><a href='#latlngbounds'>LatLngBounds</a></code></td>
 		<td><code>null</code></td>
-		<td>设置此选项后，映射将视图限制在给定的地理边界内，如果用户试图平移到视图外部，则反弹用户。若要动态设置限制，请使用 setMaxBounds 方法。</td>
+		<td>设置此选项后，地图将视图限制在给定的地理边界内，如果用户试图平移到视图外部，则反弹用户。若要动态设置限制，请使用 setMaxBounds 方法。</td>
 	</tr>
 	<tr id='map-renderer'>
 		<td><code><b>renderer</b></code></td>
@@ -638,7 +638,7 @@ var map = L.map('map', {
 	<tr id='map-load'>
 		<td><code><b>load</b></code></td>
 		<td><code><a href='#event'>Event</a></code></td>
-		<td>初始化映射时触发(首次设置映射的中心和缩放)。</td>
+		<td>初始化地图时触发(首次设置地图的中心和缩放)。</td>
 	</tr>
 	<tr id='map-zoomstart'>
 		<td><code><b>zoomstart</b></code></td>
@@ -883,13 +883,13 @@ var map = L.map('map', {
 	<tr id='map-addcontrol'>
 		<td><code><b>addControl</b>(<nobr>&lt;<a href='#control'>Control</a>&gt;</nobr> <i>control</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将给定控件添加到映射中</p>
+		<td><p>将给定控件添加到地图中</p>
 </td>
 	</tr>
 	<tr id='map-removecontrol'>
 		<td><code><b>removeControl</b>(<nobr>&lt;<a href='#control'>Control</a>&gt;</nobr> <i>control</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从映射中移除给定控件</p>
+		<td><p>从地图中移除给定控件</p>
 </td>
 	</tr>
 	<tr id='map-addlayer'>
@@ -907,13 +907,13 @@ var map = L.map('map', {
 	<tr id='map-haslayer'>
 		<td><code><b>hasLayer</b>(<nobr>&lt;<a href='#layer'>Layer</a>&gt;</nobr> <i>layer</i>)</code></td>
 		<td><code>Boolean</code></td>
-		<td><p>如果给定的图层当前添加到映射中，则返回 true</p>
+		<td><p>如果给定的图层当前添加到地图中，则返回 true</p>
 </td>
 	</tr>
 	<tr id='map-eachlayer'>
 		<td><code><b>eachLayer</b>(<nobr>&lt;Function&gt;</nobr> <i>fn</i>, <nobr>&lt;Object&gt;</nobr> <i>context?</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>迭代映射的层，可以选择指定迭代器函数的上下文。</p>
+		<td><p>迭代地图的层，可以选择指定迭代器函数的上下文。</p>
 <pre><code>map.eachLayer(function(layer){
     layer.bindPopup('Hello');
 });
@@ -1045,7 +1045,7 @@ var map = L.map('map', {
 	<tr id='map-setmaxbounds'>
 		<td><code><b>setMaxBounds</b>(<nobr>&lt;<a href='#latlngbounds'>LatLngBounds</a>&gt;</nobr> <i>bounds</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将映射视图限制为给定的边界(请参阅 maxBounds 选项)。</p>
+		<td><p>将地图视图限制为给定的边界(请参阅 maxBounds 选项)。</p>
 </td>
 	</tr>
 	<tr id='map-setminzoom'>
@@ -1063,25 +1063,25 @@ var map = L.map('map', {
 	<tr id='map-paninsidebounds'>
 		<td><code><b>panInsideBounds</b>(<nobr>&lt;<a href='#latlngbounds'>LatLngBounds</a>&gt;</nobr> <i>bounds</i>, <nobr>&lt;<a href='#pan-options'>Pan options</a>&gt;</nobr> <i>options?</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>平移映射到给定边界内的最近视图(如果还没有) ，使用特定的选项(如果有的话)控制动画。</p>
+		<td><p>平移地图到给定边界内的最近视图(如果还没有) ，使用特定的选项(如果有的话)控制动画。</p>
 </td>
 	</tr>
 	<tr id='map-paninside'>
 		<td><code><b>panInside</b>(<nobr>&lt;<a href='#latlng'>LatLng</a>&gt;</nobr> <i>latlng</i>, <nobr>&lt;options&gt;</nobr> <i>options?</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>平底锅地图的最低金额，使潜伏可见。使用 padding、 paddingTopLeft 和 paddingTopRight 选项可以使显示器适应更受限制的边界，如 fitBounds。如果 latlng 已经在(可选填充的)显示边界内，则不会对映射进行平移。</p>
+		<td><p>平底锅地图的最低金额，使潜伏可见。使用 padding、 paddingTopLeft 和 paddingTopRight 选项可以使显示器适应更受限制的边界，如 fitBounds。如果 latlng 已经在(可选填充的)显示边界内，则不会对地图进行平移。</p>
 </td>
 	</tr>
 	<tr id='map-invalidatesize'>
 		<td><code><b>invalidateSize</b>(<nobr>&lt;<a href='#zoom/pan-options'>Zoom/pan options</a>&gt;</nobr> <i>options</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>检查映射容器的大小是否发生了变化，如果发生了变化，则更新映射ー在动态更改映射大小之后调用它，默认情况下也调用动画平移。如果 options.pan 为假，则不会发生平移。如果 options.debounceMoveend 为真，它将延迟 moveend 事件，这样即使在一行中多次调用该方法，也不会经常发生该事件。</p>
+		<td><p>检查地图容器的大小是否发生了变化，如果发生了变化，则更新地图ー在动态更改地图大小之后调用它，默认情况下也调用动画平移。如果 options.pan 为假，则不会发生平移。如果 options.debounceMoveend 为真，它将延迟 moveend 事件，这样即使在一行中多次调用该方法，也不会经常发生该事件。</p>
 </td>
 	</tr>
 	<tr id='map-invalidatesize'>
 		<td><code><b>invalidateSize</b>(<nobr>&lt;Boolean&gt;</nobr> <i>animate</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>检查映射容器的大小是否发生了变化，如果发生了变化，则更新映射ー在动态更改映射大小之后调用它，默认情况下也调用动画平移。</p>
+		<td><p>检查地图容器的大小是否发生了变化，如果发生了变化，则更新地图ー在动态更改地图大小之后调用它，默认情况下也调用动画平移。</p>
 </td>
 	</tr>
 	<tr id='map-stop'>
@@ -1113,7 +1113,7 @@ var map = L.map('map', {
 	<tr id='map-stoplocate'>
 		<td><code><b>stopLocate</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>停止监视以前由 map.locate ({ watch: true })启动的位置，并且如果 map.locate 被{ setView: true }调用，则中止重置映射视图。</p>
+		<td><p>停止监视以前由 map.locate ({ watch: true })启动的位置，并且如果 map.locate 被{ setView: true }调用，则中止重置地图视图。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -1133,25 +1133,25 @@ var map = L.map('map', {
 	<tr id='map-addhandler'>
 		<td><code><b>addHandler</b>(<nobr>&lt;String&gt;</nobr> <i>name</i>, <nobr>&lt;Function&gt;</nobr> <i>HandlerClass</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>根据映射的名称和构造函数向映射中添加新的 Handler。</p>
+		<td><p>根据地图的名称和构造函数向地图中添加新的 Handler。</p>
 </td>
 	</tr>
 	<tr id='map-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>销毁映射并清除所有相关的事件侦听器。</p>
+		<td><p>销毁地图并清除所有相关的事件侦听器。</p>
 </td>
 	</tr>
 	<tr id='map-createpane'>
 		<td><code><b>createPane</b>(<nobr>&lt;String&gt;</nobr> <i>name</i>, <nobr>&lt;HTMLElement&gt;</nobr> <i>container?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>如果给定的名称不存在，则创建一个新的地图窗格，然后返回该窗格。窗格是作为容器的子窗格创建的，如果没有设置，则作为主映射窗格的子窗格创建的。</p>
+		<td><p>如果给定的名称不存在，则创建一个新的地图窗格，然后返回该窗格。窗格是作为容器的子窗格创建的，如果没有设置，则作为主地图窗格的子窗格创建的。</p>
 </td>
 	</tr>
 	<tr id='map-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String|HTMLElement&gt;</nobr> <i>pane</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回给定名称或 HTML 元素(其标识)的映射窗格。</p>
+		<td><p>返回给定名称或 HTML 元素(其标识)的地图窗格。</p>
 </td>
 	</tr>
 	<tr id='map-getpanes'>
@@ -1163,7 +1163,7 @@ var map = L.map('map', {
 	<tr id='map-getcontainer'>
 		<td><code><b>getContainer</b>()</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回包含映射的 HTML 元素。</p>
+		<td><p>返回包含地图的 HTML 元素。</p>
 </td>
 	</tr>
 	<tr id='map-whenready'>
@@ -1195,7 +1195,7 @@ var map = L.map('map', {
 	<tr id='map-getzoom'>
 		<td><code><b>getZoom</b>()</code></td>
 		<td><code>Number</code></td>
-		<td><p>返回映射视图的当前缩放级别</p>
+		<td><p>返回地图视图的当前缩放级别</p>
 </td>
 	</tr>
 	<tr id='map-getbounds'>
@@ -1207,25 +1207,25 @@ var map = L.map('map', {
 	<tr id='map-getminzoom'>
 		<td><code><b>getMinZoom</b>()</code></td>
 		<td><code>Number</code></td>
-		<td><p>返回映射的最小缩放级别(如果在映射或任何图层的 minZoom 选项中设置) ，或默认为0。</p>
+		<td><p>返回地图的最小缩放级别(如果在地图或任何图层的 minZoom 选项中设置) ，或默认为0。</p>
 </td>
 	</tr>
 	<tr id='map-getmaxzoom'>
 		<td><code><b>getMaxZoom</b>()</code></td>
 		<td><code>Number</code></td>
-		<td><p>返回映射的最大缩放级别(如果在映射或任何图层的 maxZoom 选项中设置)。</p>
+		<td><p>返回地图的最大缩放级别(如果在地图或任何图层的 maxZoom 选项中设置)。</p>
 </td>
 	</tr>
 	<tr id='map-getboundszoom'>
 		<td><code><b>getBoundsZoom</b>(<nobr>&lt;<a href='#latlngbounds'>LatLngBounds</a>&gt;</nobr> <i>bounds</i>, <nobr>&lt;Boolean&gt;</nobr> <i>inside?</i>, <nobr>&lt;<a href='#point'>Point</a>&gt;</nobr> <i>padding?</i>)</code></td>
 		<td><code>Number</code></td>
-		<td><p>返回给定边界完全适合映射视图的最大缩放级别。如果 inside (可选)设置为 true，则该方法将返回 map 视图完全适合给定边界的最小缩放级别。</p>
+		<td><p>返回给定边界完全适合地图视图的最大缩放级别。如果 inside (可选)设置为 true，则该方法将返回 map 视图完全适合给定边界的最小缩放级别。</p>
 </td>
 	</tr>
 	<tr id='map-getsize'>
 		<td><code><b>getSize</b>()</code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>返回映射容器的当前大小(以像素为单位)。</p>
+		<td><p>返回地图容器的当前大小(以像素为单位)。</p>
 </td>
 	</tr>
 	<tr id='map-getpixelbounds'>
@@ -1237,7 +1237,7 @@ var map = L.map('map', {
 	<tr id='map-getpixelorigin'>
 		<td><code><b>getPixelOrigin</b>()</code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>返回映射图层左上角的投影像素坐标(在自定义图层和覆盖实现中有用)。</p>
+		<td><p>返回地图图层左上角的投影像素坐标(在自定义图层和覆盖实现中有用)。</p>
 </td>
 	</tr>
 	<tr id='map-getpixelworldbounds'>
@@ -1263,7 +1263,7 @@ var map = L.map('map', {
 	<tr id='map-getzoomscale'>
 		<td><code><b>getZoomScale</b>(<nobr>&lt;Number&gt;</nobr> <i>toZoom</i>, <nobr>&lt;Number&gt;</nobr> <i>fromZoom</i>)</code></td>
 		<td><code>Number</code></td>
-		<td><p>返回要应用于从缩放级别到缩放级别的映射转换的比例因子。内部用于帮助缩放动画。</p>
+		<td><p>返回要应用于从缩放级别到缩放级别的地图转换的比例因子。内部用于帮助缩放动画。</p>
 </td>
 	</tr>
 	<tr id='map-getscalezoom'>
@@ -1317,31 +1317,31 @@ var map = L.map('map', {
 	<tr id='map-containerpointtolayerpoint'>
 		<td><code><b>containerPointToLayerPoint</b>(<nobr>&lt;<a href='#point'>Point</a>&gt;</nobr> <i>point</i>)</code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>给定相对于映射容器的像素坐标，返回相对于原点的相应像素坐标。</p>
+		<td><p>给定相对于地图容器的像素坐标，返回相对于原点的相应像素坐标。</p>
 </td>
 	</tr>
 	<tr id='map-layerpointtocontainerpoint'>
 		<td><code><b>layerPointToContainerPoint</b>(<nobr>&lt;<a href='#point'>Point</a>&gt;</nobr> <i>point</i>)</code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>给定相对于原始像素的像素坐标，返回相对于映射容器的相应像素坐标。</p>
+		<td><p>给定相对于原始像素的像素坐标，返回相对于地图容器的相应像素坐标。</p>
 </td>
 	</tr>
 	<tr id='map-containerpointtolatlng'>
 		<td><code><b>containerPointToLatLng</b>(<nobr>&lt;<a href='#point'>Point</a>&gt;</nobr> <i>point</i>)</code></td>
 		<td><code><a href='#latlng'>LatLng</a></code></td>
-		<td><p>给定相对于映射容器的像素坐标，返回相应的地理坐标(当前缩放级别)。</p>
+		<td><p>给定相对于地图容器的像素坐标，返回相应的地理坐标(当前缩放级别)。</p>
 </td>
 	</tr>
 	<tr id='map-latlngtocontainerpoint'>
 		<td><code><b>latLngToContainerPoint</b>(<nobr>&lt;<a href='#latlng'>LatLng</a>&gt;</nobr> <i>latlng</i>)</code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>给定一个地理坐标，返回相对于映射容器的相应像素坐标。</p>
+		<td><p>给定一个地理坐标，返回相对于地图容器的相应像素坐标。</p>
 </td>
 	</tr>
 	<tr id='map-mouseeventtocontainerpoint'>
 		<td><code><b>mouseEventToContainerPoint</b>(<nobr>&lt;<a href='#mouseevent'>MouseEvent</a>&gt;</nobr> <i>ev</i>)</code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>给定一个 MouseEvent 对象，返回相对于发生事件的映射容器的像素坐标。</p>
+		<td><p>给定一个 MouseEvent 对象，返回相对于发生事件的地图容器的像素坐标。</p>
 </td>
 	</tr>
 	<tr id='map-mouseeventtolayerpoint'>
@@ -1496,7 +1496,7 @@ var map = L.map('map', {
 	<tr id='map-zoomcontrol'>
 		<td><code><b>zoomControl</b></code></td>
 		<td><code><a href='#control-zoom'>Control.Zoom</a></code></td>
-		<td>默认的缩放控件(仅在创建映射时 zoomControl 选项为 true 时可用)。</td>
+		<td>默认的缩放控件(仅在创建地图时 zoomControl 选项为 true 时可用)。</td>
 	</tr>
 </tbody></table>
 
@@ -1525,7 +1525,7 @@ var map = L.map('map', {
 	<tr id='map-dragging'>
 		<td><code><b>dragging</b></code></td>
 		<td><code><a href='#handler'>Handler</a></code></td>
-		<td>映射拖动处理程序(通过鼠标和触摸)。</td>
+		<td>地图拖动处理程序(通过鼠标和触摸)。</td>
 	</tr>
 	<tr id='map-keyboard'>
 		<td><code><b>keyboard</b></code></td>
@@ -1560,7 +1560,7 @@ var map = L.map('map', {
 
 
 <div class='section-comments'>窗格是 DOM 元素，用于控制地图上图层的排序。可以使用 map.getPane 或 map.getPanes 方法访问窗格。可以使用 map.createPane 方法创建新窗格。
-<p>每个映射具有以下仅在 zIndex 中不同的缺省窗格。</p></div>
+<p>每个地图具有以下仅在 zIndex 中不同的缺省窗格。</p></div>
 
 <table><thead>
 	<tr>
@@ -1716,7 +1716,7 @@ var map = L.map('map', {
 
 
 
-<div class='section-comments'>修改映射中心的一些 Map 方法包含一个 options 参数。这是一个带有以下可选组件的普通 javascript 对象:</div>
+<div class='section-comments'>修改地图中心的一些 Map 方法包含一个 options 参数。这是一个带有以下可选组件的普通 javascript 对象:</div>
 
 <table><thead>
 	<tr>
@@ -1853,7 +1853,7 @@ var map = L.map('map', {
 		<td><code><b>paddingTopLeft</b></code></td>
 		<td><code><a href='#point'>Point</a></code></td>
 		<td><code>[0, 0]</code></td>
-		<td>设置映射容器左上角的填充量，在将视图设置为适合边界时不应该计算这个填充量。如果你在地图上有一些控制覆盖，比如一个侧边栏，并且你不希望它们遮蔽你正在缩放的对象，那么这种方法很有用。</td>
+		<td>设置地图容器左上角的填充量，在将视图设置为适合边界时不应该计算这个填充量。如果你在地图上有一些控制覆盖，比如一个侧边栏，并且你不希望它们遮蔽你正在缩放的对象，那么这种方法很有用。</td>
 	</tr>
 	<tr id='fitbounds-options-paddingbottomright'>
 		<td><code><b>paddingBottomRight</b></code></td>
@@ -2107,7 +2107,7 @@ var map = L.map('map', {
 		<td><code><b>autoPanSpeed</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>10</code></td>
-		<td>映射应平移的像素数。</td>
+		<td>地图应平移的像素数。</td>
 	</tr>
 </tbody></table>
 
@@ -2134,7 +2134,7 @@ var map = L.map('map', {
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -2478,19 +2478,19 @@ var map = L.map('map', {
 	<tr id='marker-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='marker-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='marker-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='marker-removefrom'>
@@ -2502,7 +2502,7 @@ var map = L.map('map', {
 	<tr id='marker-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='marker-getattribution'>
@@ -3181,7 +3181,7 @@ var map = L.map('map', {
 	<tr id='popup-openon'>
 		<td><code><b>openOn</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将弹出窗口添加到映射并关闭前一个窗口。与 map.openPopup (弹出窗口)相同。</p>
+		<td><p>将弹出窗口添加到地图并关闭前一个窗口。与 map.openPopup (弹出窗口)相同。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -3207,19 +3207,19 @@ var map = L.map('map', {
 	<tr id='popup-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='popup-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='popup-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='popup-removefrom'>
@@ -3231,7 +3231,7 @@ var map = L.map('map', {
 	<tr id='popup-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='popup-getattribution'>
@@ -3786,19 +3786,19 @@ var map = L.map('map', {
 	<tr id='tooltip-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='tooltip-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='tooltip-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='tooltip-removefrom'>
@@ -3810,7 +3810,7 @@ var map = L.map('map', {
 	<tr id='tooltip-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='tooltip-getattribution'>
@@ -4188,7 +4188,7 @@ var map = L.map('map', {
 		<td><code><b>tms</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>如果为真，则反转磁贴的 y 轴编号(为 TMS 服务打开此开关)。</td>
+		<td>如果为真，则反转瓦片的 y 轴编号(为 TMS 服务打开此开关)。</td>
 	</tr>
 	<tr id='tilelayer-zoomreverse'>
 		<td><code><b>zoomReverse</b></code></td>
@@ -4206,7 +4206,7 @@ var map = L.map('map', {
 		<td><code><b>crossOrigin</b></code></td>
 		<td><code>Boolean|String</code></td>
 		<td><code>false</code></td>
-		<td>是否将 crossOrigin 属性添加到磁贴中。如果提供了 String，则所有的贴图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
+		<td>是否将 crossOrigin 属性添加到瓦片中。如果提供了 String，则所有的地图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
 	</tr>
 </tbody></table>
 
@@ -4239,13 +4239,13 @@ var map = L.map('map', {
 		<td><code><b>opacity</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1.0</code></td>
-		<td>贴片的不透明度。可以在 createTile ()函数中使用。</td>
+		<td>瓦片的不透明度。可以在 createTile ()函数中使用。</td>
 	</tr>
 	<tr id='tilelayer-updatewhenidle'>
 		<td><code><b>updateWhenIdle</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>(depends)</code></td>
-		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
+		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的瓦片，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
 	</tr>
 	<tr id='tilelayer-updatewhenzooming'>
 		<td><code><b>updateWhenZooming</b></code></td>
@@ -4515,7 +4515,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-createtile'>
 		<td><code><b>createTile</b>(<nobr>&lt;Object&gt;</nobr> <i>coords</i>, <nobr>&lt;Function&gt;</nobr> <i>done?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>只在内部调用，覆盖 GridLayer 的 createTile () ，返回一个带有给定的合适图像 URL 的 &lt; img &gt; HTML 元素。已完成的回调函数在载入磁贴时被调用。</p>
+		<td><p>只在内部调用，覆盖 GridLayer 的 createTile () ，返回一个带有给定的合适图像 URL 的 &lt; img &gt; HTML 元素。已完成的回调函数在载入瓦片时被调用。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -4631,19 +4631,19 @@ var map = L.map('map', {
 	<tr id='tilelayer-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='tilelayer-removefrom'>
@@ -4655,7 +4655,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-getattribution'>
@@ -5023,7 +5023,7 @@ var map = L.map('map', {
 		<td><code><b>crs</b></code></td>
 		<td><code><a href='#crs'>CRS</a></code></td>
 		<td><code>null</code></td>
-		<td>用于 WMS 请求的坐标参考系统，默认映射 CRS。如果你不确定这意味着什么，不要改变它。</td>
+		<td>用于 WMS 请求的坐标参考系统，默认地图 CRS。如果你不确定这意味着什么，不要改变它。</td>
 	</tr>
 	<tr id='tilelayer-wms-uppercase'>
 		<td><code><b>uppercase</b></code></td>
@@ -5086,7 +5086,7 @@ var map = L.map('map', {
 		<td><code><b>tms</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>false</code></td>
-		<td>如果为真，则反转磁贴的 y 轴编号(为 TMS 服务打开此开关)。</td>
+		<td>如果为真，则反转瓦片的 y 轴编号(为 TMS 服务打开此开关)。</td>
 	</tr>
 	<tr id='tilelayer-wms-zoomreverse'>
 		<td><code><b>zoomReverse</b></code></td>
@@ -5104,7 +5104,7 @@ var map = L.map('map', {
 		<td><code><b>crossOrigin</b></code></td>
 		<td><code>Boolean|String</code></td>
 		<td><code>false</code></td>
-		<td>是否将 crossOrigin 属性添加到磁贴中。如果提供了 String，则所有的贴图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
+		<td>是否将 crossOrigin 属性添加到瓦片中。如果提供了 String，则所有的地图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
 	</tr>
 </tbody></table>
 
@@ -5138,13 +5138,13 @@ var map = L.map('map', {
 		<td><code><b>opacity</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1.0</code></td>
-		<td>贴片的不透明度。可以在 createTile ()函数中使用。</td>
+		<td>瓦片的不透明度。可以在 createTile ()函数中使用。</td>
 	</tr>
 	<tr id='tilelayer-wms-updatewhenidle'>
 		<td><code><b>updateWhenIdle</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>(depends)</code></td>
-		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
+		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的瓦片，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
 	</tr>
 	<tr id='tilelayer-wms-updatewhenzooming'>
 		<td><code><b>updateWhenZooming</b></code></td>
@@ -5408,7 +5408,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-setparams'>
 		<td><code><b>setParams</b>(<nobr>&lt;Object&gt;</nobr> <i>params</i>, <nobr>&lt;Boolean&gt;</nobr> <i>noRedraw?</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将对象与新参数合并，并在当前屏幕上重新请求磁贴(除非将 noRedraw 设置为 true)。</p>
+		<td><p>将对象与新参数合并，并在当前屏幕上重新请求瓦片(除非将 noRedraw 设置为 true)。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -5440,7 +5440,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-createtile'>
 		<td><code><b>createTile</b>(<nobr>&lt;Object&gt;</nobr> <i>coords</i>, <nobr>&lt;Function&gt;</nobr> <i>done?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>只在内部调用，覆盖 GridLayer 的 createTile () ，返回一个带有给定的合适图像 URL 的 &lt; img &gt; HTML 元素。已完成的回调函数在载入磁贴时被调用。</p>
+		<td><p>只在内部调用，覆盖 GridLayer 的 createTile () ，返回一个带有给定的合适图像 URL 的 &lt; img &gt; HTML 元素。已完成的回调函数在载入瓦片时被调用。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -5536,19 +5536,19 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-wms-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-wms-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='tilelayer-wms-removefrom'>
@@ -5560,7 +5560,7 @@ var map = L.map('map', {
 	<tr id='tilelayer-wms-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='tilelayer-wms-getattribution'>
@@ -6264,19 +6264,19 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 	<tr id='imageoverlay-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='imageoverlay-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='imageoverlay-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='imageoverlay-removefrom'>
@@ -6288,7 +6288,7 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 	<tr id='imageoverlay-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='imageoverlay-getattribution'>
@@ -7081,19 +7081,19 @@ L.videoOverlay(videoUrl, videoBounds ).addTo(map);
 	<tr id='videooverlay-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='videooverlay-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='videooverlay-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='videooverlay-removefrom'>
@@ -7105,7 +7105,7 @@ L.videoOverlay(videoUrl, videoBounds ).addTo(map);
 	<tr id='videooverlay-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='videooverlay-getattribution'>
@@ -7848,19 +7848,19 @@ L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 	<tr id='svgoverlay-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='svgoverlay-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='svgoverlay-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='svgoverlay-removefrom'>
@@ -7872,7 +7872,7 @@ L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 	<tr id='svgoverlay-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='svgoverlay-getattribution'>
@@ -8275,7 +8275,7 @@ L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -8534,19 +8534,19 @@ L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 	<tr id='path-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='path-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='path-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='path-removefrom'>
@@ -8558,7 +8558,7 @@ L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 	<tr id='path-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='path-getattribution'>
@@ -9056,7 +9056,7 @@ var latlngs = [
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -9384,19 +9384,19 @@ var latlngs = [
 	<tr id='polyline-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='polyline-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='polyline-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='polyline-removefrom'>
@@ -9408,7 +9408,7 @@ var latlngs = [
 	<tr id='polyline-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='polyline-getattribution'>
@@ -9916,7 +9916,7 @@ map.fitBounds(polygon.getBounds());
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -10265,19 +10265,19 @@ map.fitBounds(polygon.getBounds());
 	<tr id='polygon-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='polygon-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='polygon-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='polygon-removefrom'>
@@ -10289,7 +10289,7 @@ map.fitBounds(polygon.getBounds());
 	<tr id='polygon-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='polygon-getattribution'>
@@ -10780,7 +10780,7 @@ map.fitBounds(bounds);
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -11156,19 +11156,19 @@ map.fitBounds(bounds);
 	<tr id='rectangle-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='rectangle-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='rectangle-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='rectangle-removefrom'>
@@ -11180,7 +11180,7 @@ map.fitBounds(bounds);
 	<tr id='rectangle-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='rectangle-getattribution'>
@@ -11656,7 +11656,7 @@ map.fitBounds(bounds);
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -12019,19 +12019,19 @@ map.fitBounds(bounds);
 	<tr id='circle-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='circle-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='circle-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='circle-removefrom'>
@@ -12043,7 +12043,7 @@ map.fitBounds(bounds);
 	<tr id='circle-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='circle-getattribution'>
@@ -12497,7 +12497,7 @@ map.fitBounds(bounds);
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 </tbody></table>
 
@@ -12826,19 +12826,19 @@ map.fitBounds(bounds);
 	<tr id='circlemarker-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='circlemarker-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='circlemarker-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='circlemarker-removefrom'>
@@ -12850,7 +12850,7 @@ map.fitBounds(bounds);
 	<tr id='circlemarker-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='circlemarker-getattribution'>
@@ -13134,7 +13134,7 @@ map.fitBounds(bounds);
 
 
 
-<p>默认情况下，对映射中的所有路径使用 SVG:</p>
+<p>默认情况下，对地图中的所有路径使用 SVG:</p>
 <pre><code class="language-js">var map = L.map('map', {
 	renderer: L.svg()
 });
@@ -13397,19 +13397,19 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='svg-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='svg-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='svg-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='svg-removefrom'>
@@ -13421,7 +13421,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='svg-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='svg-getattribution'>
@@ -13734,7 +13734,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 
 
 
-<p>默认情况下，对映射中的所有路径使用 Canvas:</p>
+<p>默认情况下，对地图中的所有路径使用 Canvas:</p>
 <pre><code class="language-js">var map = L.map('map', {
 	renderer: L.canvas()
 });
@@ -13997,19 +13997,19 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='canvas-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='canvas-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='canvas-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='canvas-removefrom'>
@@ -14021,7 +14021,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='canvas-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='canvas-getattribution'>
@@ -14594,19 +14594,19 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='layergroup-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='layergroup-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='layergroup-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='layergroup-removefrom'>
@@ -14618,7 +14618,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='layergroup-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='layergroup-getattribution'>
@@ -15261,19 +15261,19 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='featuregroup-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='featuregroup-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='featuregroup-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='featuregroup-removefrom'>
@@ -15285,7 +15285,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='featuregroup-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='featuregroup-getattribution'>
@@ -16038,19 +16038,19 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='geojson-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='geojson-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='geojson-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='geojson-removefrom'>
@@ -16062,7 +16062,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='geojson-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='geojson-getattribution'>
@@ -16499,13 +16499,13 @@ var circle = L.circle( center, { renderer: myRenderer } );
 		<td><code><b>opacity</b></code></td>
 		<td><code>Number</code></td>
 		<td><code>1.0</code></td>
-		<td>贴片的不透明度。可以在 createTile ()函数中使用。</td>
+		<td>瓦片的不透明度。可以在 createTile ()函数中使用。</td>
 	</tr>
 	<tr id='gridlayer-updatewhenidle'>
 		<td><code><b>updateWhenIdle</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>(depends)</code></td>
-		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的磁贴，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
+		<td>只有在平移结束时才加载新的瓦片。在移动浏览器上默认为 true，以避免过多的请求和保持平滑的导航。否则，为了在 _ 平移期间显示新的瓦片，因为在桌面浏览器中很容易在 keepBuffer 选项之外平移。</td>
 	</tr>
 	<tr id='gridlayer-updatewhenzooming'>
 		<td><code><b>updateWhenZooming</b></code></td>
@@ -16862,19 +16862,19 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='gridlayer-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='gridlayer-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='gridlayer-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='gridlayer-removefrom'>
@@ -16886,7 +16886,7 @@ var circle = L.circle( center, { renderer: myRenderer } );
 	<tr id='gridlayer-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='gridlayer-getattribution'>
@@ -17991,7 +17991,7 @@ L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 		<td><code><b>crossOrigin</b></code></td>
 		<td><code>Boolean|String</code></td>
 		<td><code>false</code></td>
-		<td>是否将 crossOrigin 属性添加到磁贴中。如果提供了 String，则所有的贴图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
+		<td>是否将 crossOrigin 属性添加到瓦片中。如果提供了 String，则所有的地图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
 	</tr>
 </tbody></table>
 
@@ -18073,8 +18073,11 @@ L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 
 
 
-<p>Js var myIcon = L.divIcon ({ className: ‘ my-div-icon’}) ;//你可以在 CSS 中设置. my-div-icon 样式</p>
-<p>L.marker ([50.505,30.57] ，{ icon: myIcon })</p>
+<pre><code class="language-js">var myIcon = L.divIcon({className: 'my-div-icon'});
+// you can set .my-div-icon styles in CSS
+
+L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+</code></pre>
 <p>默认情况下，它有一个“单张-div-icon” CSS 类，并且被设计成带阴影的小白色方块。</p>
 
 
@@ -18224,7 +18227,7 @@ L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 		<td><code><b>crossOrigin</b></code></td>
 		<td><code>Boolean|String</code></td>
 		<td><code>false</code></td>
-		<td>是否将 crossOrigin 属性添加到磁贴中。如果提供了 String，则所有的贴图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
+		<td>是否将 crossOrigin 属性添加到瓦片中。如果提供了 String，则所有的地图都将其 crossOrigin 属性设置为提供的 String。如果您想访问平铺像素数据，这是必需的。有关有效的字符串值，请参考 CORS 设置。</td>
 	</tr>
 </tbody></table>
 
@@ -18411,13 +18414,13 @@ L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 	<tr id='control-zoom-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将控件添加到给定映射。</p>
+		<td><p>将控件添加到给定地图。</p>
 </td>
 	</tr>
 	<tr id='control-zoom-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前活动的映射中移除控件。</p>
+		<td><p>从当前活动的地图中移除控件。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -18580,13 +18583,13 @@ L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 	<tr id='control-attribution-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将控件添加到给定映射。</p>
+		<td><p>将控件添加到给定地图。</p>
 </td>
 	</tr>
 	<tr id='control-attribution-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前活动的映射中移除控件。</p>
+		<td><p>从当前活动的地图中移除控件。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -18649,7 +18652,7 @@ L.control.layers(baseLayers, overlays).addTo(map);
 	</thead><tbody>
 	<tr id='control-layers-l-control-layers'>
 		<td><code><b>L.control.layers</b>(<nobr>&lt;Object&gt;</nobr> <i>baselayers?</i>, <nobr>&lt;Object&gt;</nobr> <i>overlays?</i>, <nobr>&lt;<a href='#control-layers-option'>Control.Layers options</a>&gt;</nobr> <i>options?</i>)</code></td>
-		<td>使用给定的层创建一个层控件。基本层将与单选按钮切换，而覆盖将与复选框切换。注意，所有基础层都应该在基础层对象中传递，但是在映射实例化期间只应该向映射添加一个基础层。</td>
+		<td>使用给定的层创建一个层控件。基本层将与单选按钮切换，而覆盖将与复选框切换。注意，所有基础层都应该在基础层对象中传递，但是在地图实例化期间只应该向地图添加一个基础层。</td>
 	</tr>
 </tbody></table>
 
@@ -18821,13 +18824,13 @@ L.control.layers(baseLayers, overlays).addTo(map);
 	<tr id='control-layers-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将控件添加到给定映射。</p>
+		<td><p>将控件添加到给定地图。</p>
 </td>
 	</tr>
 	<tr id='control-layers-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前活动的映射中移除控件。</p>
+		<td><p>从当前活动的地图中移除控件。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -18993,13 +18996,13 @@ L.control.layers(baseLayers, overlays).addTo(map);
 	<tr id='control-scale-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将控件添加到给定映射。</p>
+		<td><p>将控件添加到给定地图。</p>
 </td>
 	</tr>
 	<tr id='control-scale-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前活动的映射中移除控件。</p>
+		<td><p>从当前活动的地图中移除控件。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -19565,7 +19568,7 @@ L.control.layers(baseLayers, overlays).addTo(map);
 	<tr id='domevent-getwheeldelta'>
 		<td><code><b>getWheelDelta</b>(<nobr>&lt;DOMEvent&gt;</nobr> <i>ev</i>)</code></td>
 		<td><code>Number</code></td>
-		<td>从车轮 DOM 事件获取规范化的车轮增量，以滚动的垂直像素为单位(如果向下滚动则为负值)。无需精确滚动的指向设备中的事件被映射到60像素的最佳猜测。</td>
+		<td>从车轮 DOM 事件获取规范化的车轮增量，以滚动的垂直像素为单位(如果向下滚动则为负值)。无需精确滚动的指向设备中的事件被地图到60像素的最佳猜测。</td>
 	</tr>
 	<tr id='domevent-addlistener'>
 		<td><code><b>addListener</b>(<i>…</i>)</code></td>
@@ -19776,7 +19779,9 @@ L.control.layers(baseLayers, overlays).addTo(map);
 
 
 
-<p>Js var fx = new L.PosAnimation () ; fx.run (el，[300,500] ，0.5) ;</p>
+<pre><code class="language-js">var fx = new L.PosAnimation();
+fx.run(el, [300, 500], 0.5);
+</code></pre>
 
 
 
@@ -20002,7 +20007,9 @@ L.control.layers(baseLayers, overlays).addTo(map);
 
 
 
-<p>3.1.1.1.1.1.1.1.1.1.1.1.1.1.2.1.1.2.1.2.1.2.1.2.1.2.1.2.1.2.2.1.2.1</p>
+<pre><code class="language-js">var draggable = new L.Draggable(elementToDrag);
+draggable.enable();
+</code></pre>
 
 
 
@@ -20773,19 +20780,19 @@ layer.remove();
 	<tr id='layer-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='layer-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='layer-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='layer-removefrom'>
@@ -20797,7 +20804,7 @@ layer.remove();
 	<tr id='layer-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='layer-getattribution'>
@@ -21130,7 +21137,7 @@ layer.closeTooltip();
 		<td><code><b>interactive</b></code></td>
 		<td><code>Boolean</code></td>
 		<td><code>true</code></td>
-		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础映射的一部分。</td>
+		<td>如果为 false，该层将不会发出鼠标事件，并将作为基础地图的一部分。</td>
 	</tr>
 	<tr id='interactive-layer-bubblingmouseevents'>
 		<td><code><b>bubblingMouseEvents</b></code></td>
@@ -21350,19 +21357,19 @@ layer.closeTooltip();
 	<tr id='interactive-layer-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='interactive-layer-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='interactive-layer-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='interactive-layer-removefrom'>
@@ -21374,7 +21381,7 @@ layer.closeTooltip();
 	<tr id='interactive-layer-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='interactive-layer-getattribution'>
@@ -21644,7 +21651,7 @@ layer.closeTooltip();
 	</div>
 </div>
 
-</section><h2 id='control'>Control</h2><p>控件是实现映射控件的基类。处理定位。所有其他控件都从这个类扩展。</p>
+</section><h2 id='control'>Control</h2><p>控件是实现地图控件的基类。处理定位。所有其他控件都从这个类扩展。</p>
 
 <section>
 <h3 id='control-option'>Options</h3>
@@ -21710,13 +21717,13 @@ layer.closeTooltip();
 	<tr id='control-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将控件添加到给定映射。</p>
+		<td><p>将控件添加到给定地图。</p>
 </td>
 	</tr>
 	<tr id='control-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前活动的映射中移除控件。</p>
+		<td><p>从当前活动的地图中移除控件。</p>
 </td>
 	</tr>
 </tbody></table>
@@ -21737,7 +21744,7 @@ layer.closeTooltip();
 	<tr id='control-onadd'>
 		<td><code><b>onAdd</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>应该返回控件的容器 DOM 元素，并在相关的映射事件上添加侦听器。</p>
+		<td><p>应该返回控件的容器 DOM 元素，并在相关的地图事件上添加侦听器。</p>
 </td>
 	</tr>
 	<tr id='control-onremove'>
@@ -21751,7 +21758,7 @@ layer.closeTooltip();
 </section>
 
 
-</section><h2 id='handler'>Handler</h2><p>用于映射交互处理程序的抽象类</p>
+</section><h2 id='handler'>Handler</h2><p>用于地图交互处理程序的抽象类</p>
 
 <section>
 <h3 id='handler-method'>Methods</h3>
@@ -21836,7 +21843,7 @@ layer.closeTooltip();
 	<tr id='handler-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>, <nobr>&lt;String&gt;</nobr> <i>name</i>)</code></td>
 		<td><code>this</code></td>
-		<td>将新的 Handler 添加到具有给定名称的给定映射。</td>
+		<td>将新的 Handler 添加到具有给定名称的给定地图。</td>
 	</tr>
 </tbody></table>
 
@@ -21920,7 +21927,7 @@ layer.closeTooltip();
 	</thead><tbody>
 	<tr id='projection-l-projection-lonlat'>
 		<td><code><b>L.Projection.LonLat</b></code></td>
-		<td>等矩形，或平板碳树投影ーー最简单的投影，多为 GIS 爱好者所使用。直接将 x 映射为经度，将 y 映射为纬度。也适用于平面世界，例如游戏地图。EPSG 使用: 4326和 Simple CRS。</td>
+		<td>等矩形，或平板碳树投影ーー最简单的投影，多为 GIS 爱好者所使用。直接将 x 地图为经度，将 y 地图为纬度。也适用于平面世界，例如游戏地图。EPSG 使用: 4326和 Simple CRS。</td>
 	</tr>
 	<tr id='projection-l-projection-mercator'>
 		<td><code><b>L.Projection.Mercator</b></code></td>
@@ -22095,7 +22102,7 @@ layer.closeTooltip();
 	</tr>
 	<tr id='crs-l-crs-simple'>
 		<td><code><b>L.CRS.Simple</b></code></td>
-		<td>一个简单的 CRS，直接将经纬度映射到 x 和 y。可用于平面地图(如游戏地图)。注意 y 轴仍然应该是倒置的(从底部到顶部)。Distance ()返回简单欧几里得度量。</td>
+		<td>一个简单的 CRS，直接将经纬度地图到 x 和 y。可用于平面地图(如游戏地图)。注意 y 轴仍然应该是倒置的(从底部到顶部)。Distance ()返回简单欧几里得度量。</td>
 	</tr>
 </tbody></table>
 
@@ -22315,19 +22322,19 @@ layer.closeTooltip();
 	<tr id='renderer-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='renderer-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='renderer-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='renderer-removefrom'>
@@ -22339,7 +22346,7 @@ layer.closeTooltip();
 	<tr id='renderer-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='renderer-getattribution'>
@@ -23260,7 +23267,7 @@ layer.closeTooltip();
 	<tr id='tileerrorevent-error'>
 		<td><code><b>error</b></code></td>
 		<td><code>*</code></td>
-		<td>传递到磁贴的 done ()回调的错误。</td>
+		<td>传递到瓦片的 done ()回调的错误。</td>
 	</tr>
 </tbody></table>
 
@@ -23968,19 +23975,19 @@ layer.closeTooltip();
 	<tr id='divoverlay-addto'>
 		<td><code><b>addTo</b>(<nobr>&lt;Map|LayerGroup&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>将图层添加到给定的贴图或图层组中。</p>
+		<td><p>将图层添加到给定的地图或图层组中。</p>
 </td>
 	</tr>
 	<tr id='divoverlay-remove'>
 		<td><code><b>remove</b>()</code></td>
 		<td><code>this</code></td>
-		<td><p>从当前激活的映射中移除图层。</p>
+		<td><p>从当前激活的地图中移除图层。</p>
 </td>
 	</tr>
 	<tr id='divoverlay-removefrom'>
 		<td><code><b>removeFrom</b>(<nobr>&lt;<a href='#map'>Map</a>&gt;</nobr> <i>map</i>)</code></td>
 		<td><code>this</code></td>
-		<td><p>从给定的映射中移除图层</p>
+		<td><p>从给定的地图中移除图层</p>
 </td>
 	</tr>
 	<tr id='divoverlay-removefrom'>
@@ -23992,7 +23999,7 @@ layer.closeTooltip();
 	<tr id='divoverlay-getpane'>
 		<td><code><b>getPane</b>(<nobr>&lt;String&gt;</nobr> <i>name?</i>)</code></td>
 		<td><code>HTMLElement</code></td>
-		<td><p>返回表示映射上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
+		<td><p>返回表示地图上命名窗格的 HTMLElement。如果省略名称，则返回该层的窗格。</p>
 </td>
 	</tr>
 	<tr id='divoverlay-getattribution'>
